@@ -8,32 +8,30 @@ title: Programmation
     <h1 class="page-heading">{{ page.title }} {{ site.time | date: '%Y' }}</h1>
   {%- endif -%}
 
-  {{ content }}
-
 
   {% if site.paginate %}
-    {% assign posts = paginator.posts %}
+    {% assign events = paginator.events %}
   {% else %}
-    {% assign posts = site.posts %}
+    {% assign events = site.events %}
   {% endif %}
 
 
-  {%- if posts.size > 0 -%}
+  {%- if events.size > 0 -%}
     {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
+      <h2 class="event-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
-    <ul class="post-list">
+    <ul class="event-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
+      {%- for event in events -%}
       <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="event-meta">du {{ event.date_debut | date: date_format }} au {{ event.date_fin | date: date_format }}</span>
         <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+          <a class="event-link" href="{{ event.url | relative_url }}">
+            {{ event.titre | escape }}
           </a>
         </h3>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+          {{ event.excerpt }}
         {%- endif -%}
       </li>
       {%- endfor -%}
