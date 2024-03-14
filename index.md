@@ -8,20 +8,12 @@ title: Programmation
     <h1 class="page-heading">{{ page.title }} {{ site.time | date: '%Y' }}</h1>
   {%- endif -%}
 
-
-  {% if site.paginate %}
-    {% assign events = paginator.events %}
-  {% else %}
-    {% assign events = site.events %}
-  {% endif %}
-
+  {% assign events = site.events %}
 
   {%- if events.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="event-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
+    <h2 class="event-list-heading">{{ page.list_title }}</h2>
     <ul class="event-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- assign date_format = site.minima.date_format | default: "%d/%m" -%}
       {%- for event in events -%}
       <li>
         <span class="event-meta">du {{ event.date_debut | date: date_format }} au {{ event.date_fin | date: date_format }}</span>
