@@ -22,6 +22,8 @@ title: Programmation
             {{ event.titre | escape }}
           </a>
         </h3>
+        {{ event.image_animatrice }} <br>
+        {{ event.animatrice }} <br>
         {%- if site.show_excerpts -%}
           {{ event.excerpt }}
         {%- endif -%}

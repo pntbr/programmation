@@ -1,8 +1,9 @@
 ---
 layout: event
-titre: Yoga
+titre: Les plantes
 tarif: 20 €
-personne_animatrice: Bérénice
+personne_animatrice: Yuan yuan
+image_animatrice: yuan-niu.jpg
 description: Stage Vipassana
 date_debut: 2024/03/10
 date_fin: 2024/03/10
