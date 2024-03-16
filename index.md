@@ -4,9 +4,7 @@ title: Programmation
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }} {{ site.time | date: '%Y' }}</h1>
-  {%- endif -%}
+  <h1 class="page-heading">Programmation {{ site.time | date: '%Y' }}</h1>
 
   {% assign events = site.events %}
 
@@ -22,12 +20,27 @@ title: Programmation
             {{ event.titre | escape }}
           </a>
         </h3>
-        {{ event.image_animatrice }} <br>
+        <section class="stage-animatrice text-sm">
+          <figure class="stage-animatrice-pic" role="group">
+            <img src="{{ "assets/animatrices/" | append: event.image_animatrice | relative_url }}" alt="{{ event.nom_animatrice }}">
+            <figcaption class="sr-only">{{ event.nom_animatrice }}</figcaption>
+          </figure>
+          <h3 class="stage-animatrice-nom">
+            <span class="text-xs">Présenté par</span>
+            <br><!-- TODOUX supprimer ce BR -->
+            <em>{{ event.nom_animatrice }}</em>
+          </h3>
+          <p class="stage-animatrice-bio">
+            {{ event.bio_animatrice }}
+          </p>
+        </section>
+         <hr>
         {{ event.animatrice }} <br>
         {%- if site.show_excerpts -%}
           {{ event.excerpt }}
         {%- endif -%}
       </li>
+      <hr>
       {%- endfor -%}
     </ul>
 
