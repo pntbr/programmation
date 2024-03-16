@@ -2,7 +2,7 @@
 layout: event
 titre: Yoga
 tarif: 20 €
-personne_animatrice: Bérénice
+nom_animatrice: Bérénice
 description: Stage Vipassana
 date_debut: 2024/03/10
 date_fin: 2024/03/10

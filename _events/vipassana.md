@@ -1,7 +1,7 @@
 ---
 layout: event
 titre: Vipassana sana
-personne_animatrice: Philippe David
+nom_animatrice: Philippe David
 description: Stage Vipassana
 date_debut: 2024/01/10
 date_fin: 2024/02/10
