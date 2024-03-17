@@ -1,5 +1,5 @@
 ---
-layout: event
+categorie: stage
 titre: Yoga
 tarif: 20 €
 nom_animatrice: Bérénice

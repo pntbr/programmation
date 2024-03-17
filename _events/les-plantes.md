@@ -1,5 +1,5 @@
 ---
-layout: event
+categorie: stage
 titre: Les plantes
 tarif: 20 €
 nom_animatrice: Yuan yuan
