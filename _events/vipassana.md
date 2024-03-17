@@ -2,6 +2,8 @@
 categorie: atelier
 titre: Vipassana sana
 nom_animatrice: Philippe David
+bio_animatrice: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in mauris turpis. Morbi blandit metus ac finibus lacinia. Maecenas gravida nisl at nisi euismod, sed semper eros accumsan. Vivamus vulputate blandit libero quis elementum.
 image_animatrice: personne.png
 description: Stage Vipassana
 date_debut: 2024/01/10
