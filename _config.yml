@@ -23,7 +23,8 @@ defaults:
       path: ""
       type: events
     values:
-      categorie: stage
+      layout: event
+      excerpt_separator: <!--more-->
 
 # Build settings
 markdown: kramdown
