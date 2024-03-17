@@ -2,6 +2,13 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+h3 {
+    font-size: 1.25em;
+    color: #192112;
+    font-weight: 300;
+    margin: 0;
+}
+
 hr {
     height: 0;
     margin: 1.6em 0;
@@ -11,6 +18,12 @@ hr {
     border-bottom-style: none;
     border-bottom-color: currentcolor;
     border-bottom: 1px solid #e5e7ea;
+}
+
+.hr-half {
+    background: #999;
+    width: 50%;
+    margin: 1em auto;
 }
 
 .text-xs {
@@ -39,8 +52,7 @@ hr {
     color: #333;
     margin: 20px auto;
     padding: 10px;
-    background-color: #f9f9f9;
-    border-left: 1px solid #009688;
+    background-color: #ddd0d0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -53,8 +65,23 @@ hr {
     }
 }
 
-.description {
+.event {
     animation: fadeIn 2s ease-in-out;
+}
+
+.event {
+    color: #333;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 1px solid #009688;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stage-meta {
+    display: block;
+    color: #555;
+    font-style: italic;
 }
 
 .stage-animatrice-nom {
@@ -67,4 +94,8 @@ hr {
     margin: .5em 1em 0 0;
     overflow: hidden;
     border-radius: 50%;
+}
+
+.stage-animatrice-bio {
+    color: #555;
 }
