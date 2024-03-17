@@ -1,3 +1,7 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
 hr {
     height: 0;
     margin: 1.6em 0;
@@ -29,6 +33,28 @@ hr {
     clip: rect(0 0 0 0);
     -webkit-clip-path: inset(50%);
     clip-path: inset(50%);
+}
+
+.description {
+    color: #333;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 1px solid #009688;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.description {
+    animation: fadeIn 2s ease-in-out;
 }
 
 .stage-animatrice-nom {
