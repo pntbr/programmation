@@ -14,10 +14,8 @@ show_excerpts: true
 collections:
   events:
     output: true
-    sort_by: nom_animatrice
   animations:
     output: true
-    sort_by: nom_animatrice
 
 defaults:
   - scope:

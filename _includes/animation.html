@@ -1,0 +1,27 @@
+{% assign animation = include.animation %}
+<article class="stage">
+    <h3>
+      <a class="stage-link" href="{{ animation.url | relative_url }}">
+        {{ animation.titre | escape }}
+      </a>
+    </h3>
+    <span class="stage-meta text-sm">{{ animation.quand }}</span>
+    <span class="stage-meta text-sm">{{ animation.categorie }}</span>
+    <hr class="hr-half">
+    {{ animation.excerpt }}
+    <hr class="hr-half">
+    <section class="stage-animatrice text-sm">
+      <figure class="stage-animatrice-pic" role="group">
+        <img src="{{ "assets/animatrices/" | append: animation.image_animatrice | relative_url }}" alt="{{ animation.nom_animatrice }}">
+        <figcaption class="sr-only">{{ animation.nom_animatrice }}</figcaption>
+      </figure>
+      <h3 class="stage-animatrice-nom">
+        <span class="text-xs">Animé par</span>
+        <em>{{ animation.nom_animatrice }}</em>
+      </h3>
+      <p class="stage-animatrice-bio">
+        {{ animation.bio_animatrice }}
+      </p>
+    </section>
+  </article>
+  <hr>
