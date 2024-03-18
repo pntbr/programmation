@@ -1,0 +1,27 @@
+{% assign event = include.event %}
+<article class="event">
+    <h3>
+      <a class="stage-link" href="{{ event.url | relative_url }}">
+        {{ event.titre | escape }}
+      </a>
+    </h3>
+    <span class="stage-meta text-sm">du {{ event.date_debut | date: date_format }} au {{ event.date_fin | date: date_format }}</span>
+    <span class="stage-meta text-sm">{{event.categorie}}</span>
+    <hr class="hr-half">
+    {{ event.excerpt }}
+    <hr class="hr-half">
+    <section class="stage-animatrice text-sm">
+      <figure class="stage-animatrice-pic" role="group">
+        <img src="{{ "assets/animatrices/" | append: event.image_animatrice | relative_url }}" alt="{{ event.nom_animatrice }}">
+        <figcaption class="sr-only">{{ event.nom_animatrice }}</figcaption>
+      </figure>
+      <h3 class="stage-animatrice-nom">
+        <span class="text-xs">Animé par</span>
+        <em>{{ event.nom_animatrice }}</em>
+      </h3>
+      <p class="stage-animatrice-bio">
+        {{ event.bio_animatrice }}
+      </p>
+    </section>
+  </article>
+  <hr>
