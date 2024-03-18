@@ -7,17 +7,30 @@ list_title: Stage et ateliers
 ---
 
 <div class="home">
-  <h1 class="page-heading"> Programmation {{ site.time | date: '%Y' }}</h1>
+  <h1 class="page-heading">Programmation {{ site.time | date: '%Y' }}</h1>
   <p class="description">{{ page.description }}</p>
 
+  {% assign current_date = site.time | date: '%Y-%m-%d' %}
   {% assign events = site.events | sort: "date_debut" %}
-  {%- if events.size > 0 -%}
+  {% if events.size > 0 %}
     <h2 class="event-list-heading">{{ page.list_title }}</h2>
-
-      {%- assign date_format = site.minima.date_format | default: "%d/%m" -%}
-      {%- for event in events -%}
-        {% include event.html event=event %}
-      {%- endfor -%}
-  {%- endif -%}
-
+    <section class="stage-futur">
+      <h3>À venir</h3>
+      {% for event in events %}
+        {% assign end_date = event.date_fin | date: '%Y-%m-%d' %}
+        {% if end_date >= current_date %}
+          {% include event.html event=event %}
+        {% endif %}
+      {% endfor %}
+    </section>
+    <section class="stage-finis">
+    <h3>Passés</h3>
+      {% for event in events %}
+        {% assign end_date = event.date_fin | date: '%Y-%m-%d' %}
+        {% if end_date < current_date %}
+          {% include event.html event=event %}
+        {% endif %}
+      {% endfor %}
+    </section>
+  {% endif %}
 </div>

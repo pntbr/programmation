@@ -65,12 +65,12 @@ hr {
     }
 }
 
-.event {
+.stage {
     animation: fadeIn 2s ease-in-out;
 }
 
-.event {
-    color: #333;
+.stage {
+    color: #555;
     margin: 20px auto;
     padding: 10px;
     background-color: #f9f9f9;
@@ -80,7 +80,6 @@ hr {
 
 .stage-meta {
     display: block;
-    color: #555;
     font-style: italic;
 }
 
@@ -97,5 +96,13 @@ hr {
 }
 
 .stage-animatrice-bio {
-    color: #555;
+    min-height: 5em;
+}
+
+.stage-finis .stage {
+    opacity: .5;
+}
+
+.stage-finis .stage-animatrice-pic {
+    filter: grayscale(1);
 }
