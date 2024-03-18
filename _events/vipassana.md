@@ -6,12 +6,12 @@ bio_animatrice: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in mauris turpis. Morbi blandit metus ac finibus lacinia. Maecenas gravida nisl at nisi euismod, sed semper eros accumsan. Vivamus vulputate blandit libero quis elementum.
 image_animatrice: personne.png
 description: Stage Vipassana
-date_debut: 2024/01/10
-date_fin: 2024/02/10
+date_debut: 2024-01-10
+date_fin: 2024-02-10
 image: vipassana.jpg
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in mauris turpis. Morbi blandit metus ac finibus lacinia. Maecenas gravida nisl at nisi euismod, sed semper eros accumsan. Vivamus vulputate blandit libero quis elementum. Integer tempus vitae justo vel euismod. Proin finibus lacus ut odio tristique pulvinar. Nullam ac porta ipsum, in venenatis dolor. Sed dictum et diam auctor molestie. Nullam nec lectus sit amet nunc posuere aliquet non quis ante. In laoreet mi nec neque maximus varius.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in mauris turpis. Morbi blandit metus ac finibus lacinia. Maecenas gravida nisl at nisi euismod, sed semper eros accumsan. Vivamus vulputate blandit libero quis elementum. <!--more-->  Integer tempus vitae justo vel euismod. Proin finibus lacus ut odio tristique pulvinar. Nullam ac porta ipsum, in venenatis dolor. Sed dictum et diam auctor molestie. Nullam nec lectus sit amet nunc posuere aliquet non quis ante. In laoreet mi nec neque maximus varius.
 
 Mauris malesuada justo semper pharetra pretium. Nullam accumsan sapien eget ipsum mattis, consequat blandit metus congue. Sed neque tortor, ultricies vitae nibh ultrices, aliquet imperdiet mi. Praesent rutrum malesuada condimentum. In nec efficitur ipsum. Mauris at sodales lorem, eu accumsan sapien. Nunc egestas diam ut quam molestie, nec laoreet lorem suscipit. Duis at sem nunc. Vivamus ut ultricies lorem. Fusce vitae pulvinar sapien. Morbi malesuada ornare lacus, sed congue turpis hendrerit a. Duis eget nunc erat. Proin tincidunt, quam eu tincidunt dictum, lacus risus condimentum felis, in maximus magna nulla quis purus.
 

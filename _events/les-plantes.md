@@ -7,8 +7,8 @@ image_animatrice: yuanyuan-niu.jpg
 bio_animatrice: >
     « Je suis une enfant chinoise de la ville profondément transformée par deux expériences qui ont établi mon lien avec les plantes et la nature : un cours certifié de permaculture en Thaïlande ; mon apprentissage auprès d'un maître de la médecine traditionnelle chinoise exerçant à Chengdu. Je porte en moi le respect de la nature et ce respect se manifeste à chaque instant, de la cueillette à l'assiette. Pour cela, j'incarne ce mantra :» 
 description: Stage Vipassana
-date_debut: 2024/03/10
-date_fin: 2024/03/10
+date_debut: 2024-03-10
+date_fin: 2024-03-10
 image: yoga.jpg
 ---
 
