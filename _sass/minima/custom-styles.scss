@@ -10,13 +10,8 @@ h3 {
 }
 
 hr {
-    height: 0;
     margin: 1.6em 0;
-    padding: 0;
-    border: 0;
-    border-bottom-width: 0px;
-    border-bottom-style: none;
-    border-bottom-color: currentcolor;
+    border: none;
     border-bottom: 1px solid #e5e7ea;
 }
 
@@ -67,9 +62,6 @@ hr {
 
 .stage {
     animation: fadeIn 2s ease-in-out;
-}
-
-.stage {
     color: #555;
     margin: 20px auto;
     padding: 10px;
