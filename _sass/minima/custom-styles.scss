@@ -60,6 +60,20 @@ hr {
     }
 }
 
+img,
+.osm {
+    display: block;
+    margin: 1em auto;
+    width: 80%;
+    box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.osm {
+    border: 1px solid black;
+    width: 600px;
+    height: 400px;
+}
+
 .stage {
     animation: fadeIn 2s ease-in-out;
     color: #555;
@@ -85,6 +99,11 @@ hr {
     margin: .5em 1em 0 0;
     overflow: hidden;
     border-radius: 50%;
+}
+
+.stage-animatrice-pic img {
+    width: 100%;
+    margin: 0 0;
 }
 
 .stage-animatrice-bio {

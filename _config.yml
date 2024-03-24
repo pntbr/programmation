@@ -1,9 +1,9 @@
 title: Terre Pure
 author:
-  name: pntbr
-  email: stephane@pntbr.fr
+  name: Annick Petit
+  email: associationterrepure@gmail.com
 description: >-
-  Un petit outil simple pour présenter et gérer la programmation d'évènements
+  Page de présentation de la programmation des évènements de l'association Terre Pure
 baseurl: "/programmation"
 url: ""
 github_username:  pntbr

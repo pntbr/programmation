@@ -6,8 +6,8 @@ bio_animatrice: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in mauris turpis. Morbi blandit metus ac finibus lacinia. Maecenas gravida nisl at nisi euismod, sed semper eros accumsan. Vivamus vulputate blandit libero quis elementum.
 image_animatrice: personne.png
 description: Stage Vipassana
-date_debut: 2024-01-10
-date_fin: 2024-02-10
+date_debut: 2024-05-19
+date_fin: 2024-05-26
 image: vipassana.jpg
 ---
 
