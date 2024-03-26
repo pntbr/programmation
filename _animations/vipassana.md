@@ -1,7 +1,7 @@
 ---
 categorie: méditation non-guidée
 quand: Tous les vendredi matin de 9h30 à 12h
-titre: Vippa Sanna
+titre: Vipassanna
 tarif: gratuit
 nom_animatrice: Patrice et Stéphane
 image_animatrice: personne.png

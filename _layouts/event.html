@@ -1,7 +1,33 @@
 ---
 layout: base
 ---
+
+<style>
+  .bando {
+    width: 100%;
+  }
+
+  .stage-animatrice-bio {
+    color: #555;
+  }
+
+</style>
+
+
+<img src="{{ "assets/bando/" | append: page.image | relative_url }}" alt="Une personne méditant sous un arbre" class="bando">
+
 <article class="event h-entry" itemscope itemtype="http://schema.org/Blogeventing">
+<footer class="stage-animatrice text-sm">
+  <figure class="stage-animatrice-pic" role="group">
+    <img src="{{ "assets/animatrices/" | append: page.image_animatrice | relative_url }}" alt="{{ page.nom_animatrice }}">
+    <figcaption class="sr-only">{{ page.nom_animatrice }}</figcaption>
+  </figure>
+  <h3 class="stage-animatrice-nom">
+    <span class="text-xs">Animé par</span>
+    <em>{{ page.nom_animatrice }}</em>
+  </h3>
+  <p class="stage-animatrice-bio">{{ page.bio_animatrice }}</p>
+</footer>
 
   <header class="event-header">
     <h1 class="event-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
@@ -17,13 +43,6 @@ layout: base
           {{ mdate | date: date_format }}
         </time>
       {%- endif -%}
-      {%- if page.author -%}
-        • {% for author in page.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-            {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
-      {%- endif -%}</p>
   </header>
 
   <div class="event-content e-content" itemprop="articleBody">
