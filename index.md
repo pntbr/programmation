@@ -9,7 +9,7 @@ description: >
   <h1 class="page-heading">Programmation {{ site.time | date: '%Y' }}</h1>
   <p class="description">{{ page.description }}</p>
   
-  {% assign animations = site.animations %}
+  {% assign animations = site.animations | sort: "ordre" %}
   {% if animations.size > 0 %}
     <h2 class="event-list-heading">Animations</h2>
     <section class="animations">
