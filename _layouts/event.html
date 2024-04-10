@@ -3,10 +3,48 @@ layout: base
 ---
 
 <style>
+
+  .booking {
+    display: block;
+    width: 5em;
+    outline: 0;
+    cursor: pointer;
+    margin: auto;
+    padding: 5px 1em;
+    font-size: 1em;
+    font-weight: 500;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #2ea44f;
+    border-color: #1b1f2326;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+    transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition-property: color, background-color, border-color;
+  }
+  .booking:visited {
+    color: #ffffff;
+    background-color: #2ea44f;
+    text-decoration: none;
+  }
+  .booking:hover {
+    background-color: #2c974b;
+    border-color: #1b1f2326;
+    transition-duration: 0.1s;
+    text-decoration: none;
+  }
+  .date {
+    background: #555;
+    color: #ddd;
+  }
+  .event-title {
+    font-size: 4em;
+    text-align: center;
+  }
   .bando {
     width: 100%;
   }
-
   .stage-animatrice-bio {
     color: #555;
   }
@@ -17,47 +55,34 @@ layout: base
 <img src="{{ "assets/bando/" | append: page.image | relative_url }}" alt="Une personne méditant sous un arbre" class="bando">
 
 <article class="event h-entry" itemscope itemtype="http://schema.org/Blogeventing">
-<footer class="stage-animatrice text-sm">
-  <figure class="stage-animatrice-pic" role="group">
-    <img src="{{ "assets/animatrices/" | append: page.image_animatrice | relative_url }}" alt="{{ page.nom_animatrice }}">
-    <figcaption class="sr-only">{{ page.nom_animatrice }}</figcaption>
-  </figure>
-  <h3 class="stage-animatrice-nom">
-    <span class="text-xs">Animé par</span>
-    <em>{{ page.nom_animatrice }}</em>
-  </h3>
-  <p class="stage-animatrice-bio">{{ page.bio_animatrice }}</p>
-</footer>
-
-  <header class="event-header">
-    <h1 class="event-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+  <header class="stage-animatrice text-sm">
+    <figure class="stage-animatrice-pic" role="group">
+      <img src="{{ "assets/animatrices/" | append: page.image_animatrice | relative_url }}" alt="{{ page.nom_animatrice }}">
+      <figcaption class="sr-only">{{ page.nom_animatrice }}</figcaption>
+    </figure>
+    <h3 class="stage-animatrice-nom">
+      <span class="text-xs">Animé par</span>
+      <em>{{ page.nom_animatrice }}</em>
+    </h3>
+    <p class="stage-animatrice-bio">{{ page.bio_animatrice }}</p>
     <p class="event-meta">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: date_format }}
+      {% assign date_format = page.date_fin | date: '%d/%m/%Y' %}
+      <h2 class="event-title p-name" itemprop="name headline">{{ page.titre | escape }}</h2>
+      du :
+      <time class="date dt-start" datetime="{{ page.date_debut | date_to_xmlschema }}" itemprop="dateStart">
+        {{ page.date_debut | date: date_format }}
       </time>
-      {%- if page.modified_date -%}
-        ~ 
-        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
-        </time>
-      {%- endif -%}
+      au : 
+      <time class="date dt-end" datetime="{{ page.date_fin }} " itemprop="dateEnd">
+          {{ page.date_fin | date: date_format }}
+      </time>
   </header>
 
-  <div class="event-content e-content" itemprop="articleBody">
-    {{ page.image_animatrice }} <br>
-    {{ page.animatrice }} <br>
-    {{ page.date_debut }} <br>
-    {{ page.date_fin }} <br>
-    {{ page.titre }} <br>
-    {{ page.image }} <br>
-    {{ content }}
-  </div>
+  <body>
+    {{ page.content }}
+  </body>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  <footer>
+    <a class="booking" href="{{ page.booking }}" target="_blank">Réserver</a>
+  </footer>
 </article>

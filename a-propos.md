@@ -37,8 +37,8 @@ Pour votre séjour, nous proposons :
 - Une cuisine et un salon collectif pour partager des moments ensemble.
 - Une salle de méditation Gempa, conçue pour la pratique et la méditation.
 
-## À propos d'Annick Petit
+## À propos d'Annick
 
-La gestion de Terre Pure est assurée par Annick Petit, une résidente de l'Ariège depuis 45 ans. Pratiquante du bouddhisme depuis 20 ans, Annick participe activement à des projets d'aide humanitaire au Népal à travers son association.
+La gestion de Terre Pure est assurée par Annick, une résidente de l'Ariège depuis 45 ans. Pratiquante du bouddhisme depuis 20 ans, Annick participe activement à des projets d'aide humanitaire au Népal à travers son association.
 
 Nous vous invitons à découvrir cet espace de paix et de spiritualité, que ce soit pour un stage, un séjour de méditation ou simplement pour profiter de la nature environnante.

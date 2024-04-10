@@ -8,6 +8,7 @@ image_animatrice: philippe-david.png
 date_debut: 2024-05-19
 date_fin: 2024-05-26
 image: vipassana.png
+booking: https://docs.google.com/spreadsheets/d/19FKHyONiB8myK4WKD8zeCb3HrGpH6lM1MP-7K3CTEaw/edit#gid=987117875
 ---
 
 Vipassana, qui se traduit par "vision pénétrante" en pali, la langue ancienne de l'Inde, constitue un pilier de l'enseignement du Bouddha. Cette pratique favorise une observation neutre des expériences mentales, offrant ainsi un espace de liberté inestimable.

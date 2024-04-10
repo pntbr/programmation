@@ -8,6 +8,7 @@ image_animatrice: philippe-david.png
 date_debut: 2024-09-21
 date_fin: 2024-09-28
 image: mahamoudra.png
+booking: https://docs.google.com/spreadsheets/d/19FKHyONiB8myK4WKD8zeCb3HrGpH6lM1MP-7K3CTEaw/edit#gid=1677430711
 ---
 
 Mahamoudra, terme sanskrit signifiant "grand sceau" ou "grand symbole", représente une voie spirituelle majeure dans le bouddhisme tibétain. Ce chemin vers l'éveil se distingue par sa capacité à révéler la nature ultime de la réalité et de l'esprit, offrant une perspective directe et profonde sur notre existence.

@@ -6,8 +6,8 @@ titre: pratiques de purification et lamrim
 tarif: gratuit
 nom_animatrice: Annick
 bio_animatrice: >
-    Annick Petit est arrivée en Ariège il y a 45 ans, elle est au cœur de l'association Terre Pure. Sa pratique du bouddhisme qu'elle consolide depuis près de 30 ans, est le fondement de son engagement tant dans la gestion de Terre Pure que dans son implication dans des projets d'aide humanitaire au Népal.
-image_animatrice: annick-petit.png
+    Annick est arrivée en Ariège il y a 45 ans, elle est au cœur de l'association Terre Pure. Sa pratique du bouddhisme qu'elle consolide depuis près de 30 ans, est le fondement de son engagement tant dans la gestion de Terre Pure que dans son implication dans des projets d'aide humanitaire au Népal.
+image_animatrice: annick-petit.png  
 ---
 Rejoignez-nous à l'association Terre Pure les mercredis matin pour une session de pratiques de purification et d'étude du Lamrim, animée par Annick. Ces rencontres se concentrent sur des techniques bouddhistes pour clarifier l'esprit et approfondir la compréhension du chemin spirituel.
 <!--more-->

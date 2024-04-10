@@ -9,6 +9,7 @@ image_animatrice: venerable-charles.png
 date_debut: 2024-06-20
 date_fin: 2024-06-23
 image: nyoung-ne.png
+booking: https://docs.google.com/spreadsheets/d/19FKHyONiB8myK4WKD8zeCb3HrGpH6lM1MP-7K3CTEaw/edit#gid=0
 ---
 
 Le Nyoung-Né est une pratique bouddhiste tibétaine profondément transformatrice, conçue pour purifier les karmas négatifs accumulés à travers le corps, la parole, et l’esprit. Cette retraite intensive de deux jours mêle la méditation sur Tchènrézi à 1000 bras, le Bouddha de la Compassion, à la rigueur du jeûne et du silence complet.
