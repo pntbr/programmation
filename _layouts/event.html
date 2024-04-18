@@ -34,13 +34,17 @@ layout: base
     transition-duration: 0.1s;
     text-decoration: none;
   }
-  .date {
-    background: #555;
-    color: #ddd;
-  }
   .event-title {
     font-size: 4em;
     text-align: center;
+  }
+  .event-date {
+    margin-bottom: 1em;
+    text-align: center;
+    text-style: italic;
+    font-size: 2em;
+    font-weight: 800;
+    color: #555;
   }
   .bando {
     width: 100%;
@@ -68,14 +72,15 @@ layout: base
     <p class="event-meta">
       {% assign date_format = page.date_fin | date: '%d/%m/%Y' %}
       <h2 class="event-title p-name" itemprop="name headline">{{ page.titre | escape }}</h2>
-      du :
-      <time class="date dt-start" datetime="{{ page.date_debut | date_to_xmlschema }}" itemprop="dateStart">
-        {{ page.date_debut | date: date_format }}
-      </time>
-      au : 
-      <time class="date dt-end" datetime="{{ page.date_fin }} " itemprop="dateEnd">
-          {{ page.date_fin | date: date_format }}
-      </time>
+      <div class="event-date">
+        <time class="date dt-start" datetime="{{ page.date_debut | date_to_xmlschema }}" itemprop="dateStart">
+          {{ page.date_debut | date: date_format }}
+        </time>
+        au
+        <time class="date dt-end" datetime="{{ page.date_fin }} " itemprop="dateEnd">
+            {{ page.date_fin | date: date_format }}
+        </time>
+      </div>
   </header>
 
   <body>
